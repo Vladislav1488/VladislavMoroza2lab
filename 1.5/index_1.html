@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <title>Калькулятор</title>
+</head>
+  <body>
+    <div id="disp">
+      <form name="calculator">
+        <table border="1">
+          <tr>
+            
+            <td colspan="5"><input id="disp" type="text" class="area" /></td>
+          </tr>
+          <tr>
+            <td><input type="button" name="button" value="&radic;" onclick="calculator.disp.value = Math.sqrt(calculator.disp.value)" /></td>
+            <td><input  type="button" name="button" value="!" onclick=""/></td> <!-- i doun`t know how to do it :( -->
+            <td><input clearentry" type="button" name="button" value="CE" onclick="calculator.disp.value = ' '"/></td>
+            <td><input type="button" name="button" value="&larr;" onclick="calculator.disp.value = calculator.disp.value.slice(0, -1) "/></td>
+          </tr>
+          <tr>
+            <td><input type="button" name="button" value="7" onclick="calculator.disp.value += '7'" /></td>
+            <td><input type="button" name="button" value="8" onclick="calculator.disp.value += '8'"/></td>
+            <td><input type="button" name="button" value="9" onclick="calculator.disp.value += '9'"/></td>
+            <td><input type="button" name="button" value="+" onclick="calculator.disp.value += '+'" /></td>
+          </tr>
+          <tr>
+            <td><input type="button" name="button" value="4" onclick="calculator.disp.value += '4'" /></td>
+            <td><input type="button" name="button" value="5" onclick="calculator.disp.value += '5'"/></td>
+            <td><input type="button" name="button" value="6" onclick="calculator.disp.value += '6'"/></td>
+            <td><input type="button" name="button" value="-" onclick="calculator.disp.value += '-'"/></td>
+          </tr>
+          <tr>
+            <td><input type="button" name="button" value="1" onclick="calculator.disp.value += '1'" /></td>
+            <td><input type="button" name="button" value="2" onclick="calculator.disp.value += '2'"/></td>
+            <td><input type="button" name="button" value="3" onclick="calculator.disp.value += '3'"/></td>
+            <td><input type="button" name="button" value="*" onclick="calculator.disp.value += '*'"/></td>
+          </tr>
+          <tr>
+            <td><input class="zero" type="button" name="button" value="0" onclick="calculator.disp.value += '0'"/></td>
+            <td><input type="button" name="button" value="." onclick="calculator.disp.value += '.'"/></td>
+            <td><input type="button" name="button" value="=" onclick="calculator.disp.value = eval(calculator.disp.value)"/></td>
+            <td><input type="button" name="button" value="/" onclick="calculator.disp.value += '/'"/></td>
+          </tr>   
+        </table>
+      </form> 
+    </div>  
+    
+  <script src="js_1.js"></script>
+  </body>
+  </html>
