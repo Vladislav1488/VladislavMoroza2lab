@@ -88,7 +88,7 @@ function Accounting() {
 
         case 'Июль':
             if (day >= 24 && day <= 31) {
-                document.getElementById("sign").src = "images/Lew.png";
+                document.getElementById("sign").src = "images/lev.png";
                 document.getElementById("name").innerText = "Знак Лев:";
             } else if (day >= 1 && day <= 23) {
                 document.getElementById("sign").src = "images/rak.png";
@@ -104,7 +104,7 @@ function Accounting() {
                 document.getElementById("sign").src = "images/deva.png";
                 document.getElementById("name").innerText = "Знак Дева:";
             } else if (day >= 1 && day <= 23) {
-                document.getElementById("sign").src = "images/Lew.png";
+                document.getElementById("sign").src = "images/lev.png";
                 document.getElementById("name").innerText = "Знак Лев:";
             } else {
                 alert('Вы указали не верный день месяца');
