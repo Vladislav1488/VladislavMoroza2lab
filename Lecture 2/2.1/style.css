@@ -1,4 +1,4 @@
-button {
+.codebutton {
     background: -moz-linear-gradient(#00BBD6, #EBFFFF);
     background: -webkit-gradient(linear, 0 0, 0 100%, from(#00BBD6), to(#EBFFFF));
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00BBD6', endColorstr='#EBFFFF');
@@ -10,7 +10,7 @@ button {
     border: 1px solid #666;
 }
 
-button:hover {
+.codebutton:hover {
     background-color: #ff3434;
 
 }

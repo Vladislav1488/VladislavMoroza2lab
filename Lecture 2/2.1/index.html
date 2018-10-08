@@ -9,12 +9,25 @@
 <div class="container1">
 
     <body>
-        <textarea id="in"></textarea>
-        <input class="shift" size="1" id="shift"></input>
-        <hr>
-        <button onclick="codify()">зашифровать</button>
-        <button onclick="decode()">дешифровать</button>
-        <p class="out" id="out"></p>
+        <br>
+        <div align="center">
+            <strong>Введите сюда Ваш текст:</strong><br>
+            <br>
+            <input id="b_text1" type="text" size="80"><br>
+            <input id="sm" type="number" min="0" value="1" step="1">
+            <br>
+            <br>
+            <strong>Выберите действие:</strong><br>
+            <br>
+            <input class="codebutton" onclick="caesar_code(0,+sm.value)" type="button" value="Шифровать">
+            <input class="codebutton" onclick="caesar_code(1,+sm.value)" type="button" value="Дешифровать">
+            <br>
+            <br>
+            <br>
+            <strong>Результат:</strong><br>
+            <br>
+            <input id="b_text2" type="text" size="80">
+        </div>
         <script src="coder.js"></script>
     </body>
 </div>

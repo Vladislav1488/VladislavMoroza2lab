@@ -1,33 +1,12 @@
-function codify() {
-    var shift = document.getElementById("shift").value;
-
-    shift = parseInt(shift);
-
-    let str = document.getElementById("in").value;
-
-    console.log(str.charCodeAt(0));
-    let out = '';
-    for (let i = 0; i < str.length; i++) {
-        let code = str.charCodeAt(i);
-        code = code + shift;
-        out += String.fromCharCode(code);
-    }
-    document.getElementById('out').innerHTML = out;
-}
-
-function decode() {
-    var shift = document.getElementById("shift").value;
-
-    shift = parseInt(shift);
-
-    let str = document.getElementById("in").value;
-
-    console.log(str.charCodeAt(0));
-    let out = '';
-    for (let i = 0; i < str.length; i++) {
-        let code = str.charCodeAt(i);
-        code = code - shift;
-        out += String.fromCharCode(code);
-    }
-    document.getElementById('out').innerHTML = out;
-}
+function caesar_code(a, d) {
+    var c = document.getElementById("b_text1"),
+        g = document.getElementById("b_text2"),
+        b = "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        e = "",
+        d = d % b.length || 0,
+        c = c.value.toUpperCase(),
+        f = b.substr(d) + b.substr(0, d);
+    1 == a && (a = b, b = f, f = a);
+    for (i = 0; i < c.length; i++) a = b.lastIndexOf(c.charAt(i)), a = f.charAt(a) || c.charAt(i), e += a;
+    g.value = e
+};
