@@ -1,0 +1,55 @@
+body {
+    background: url(images/thisimage.jpg);
+}
+
+.textarea {
+    width: 40em;
+    height: 15em;
+}
+
+.key {
+    width: 10em;
+}
+
+.codebutton {
+    background: -moz-linear-gradient(#FF0600, #EBFFFF);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#FF0600), to(#EBFFFF));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0600', endColorstr='#EBFFFF');
+    padding: 3px 7px;
+    color: #333;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #666;
+}
+
+.codebutton:hover {
+    background-color: #ff3434;
+}
+
+.noborder {
+    height: 10em;
+    position: relative;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.codebutton1 {
+    background: -moz-linear-gradient(#000000, #EBFFFF);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#000000), to(#EBFFFF));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#EBFFFF');
+    padding: 3px 7px;
+    color: #333;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #666;
+}
+
+.codebutton1:hover {
+    background-color: #ff3434;
+}

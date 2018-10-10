@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Виженер</title>
+    <script type="text/javascript" src="coder.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <form action="#" method="get" onsubmit="return false">
+        <div align="center">
+            <table class="noborder">
+                <tbody>
+                    <tr>
+                        <td><label for="text">Text:</label></td>
+                        <td><textarea class="textarea" id="text" cols="50" rows="10" "></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for=" key">Key:</label></td>
+                    <td><input class="key" type="text" value="abc" id="key"" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input class="codebutton1" type="button" value="Encrypt" onclick="doCrypt(false)" />
+                        <input class="codebutton" type="button" value="Decrypt" onclick="doCrypt(true)" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </form>
+</body>
+
+</html>
