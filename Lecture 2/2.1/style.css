@@ -1,7 +1,7 @@
-.codebutton {
-    background: -moz-linear-gradient(#00BBD6, #EBFFFF);
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#00BBD6), to(#EBFFFF));
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00BBD6', endColorstr='#EBFFFF');
+.codebutton1 {
+    background: -moz-linear-gradient(#FF0600, #EBFFFF);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#FF0600), to(#EBFFFF));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0600', endColorstr='#EBFFFF');
     padding: 3px 7px;
     color: #333;
     -moz-border-radius: 5px;
@@ -10,9 +10,8 @@
     border: 1px solid #666;
 }
 
-.codebutton:hover {
+.codebutton1:hover {
     background-color: #ff3434;
-
 }
 
 body {
@@ -32,4 +31,20 @@ body {
 
 .out {
     background-color: white;
+}
+
+.codebutton {
+    background: -moz-linear-gradient(#000000, #EBFFFF);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#000000), to(#EBFFFF));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#EBFFFF');
+    padding: 3px 7px;
+    color: #333;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #666;
+}
+
+.codebutton:hover {
+    background-color: #ff3434;
 }

@@ -11,22 +11,27 @@
     <body>
         <br>
         <div align="center">
-            <strong>Введите сюда Ваш текст:</strong><br>
-            <br>
-            <input id="b_text1" type="text" size="80"><br>
-            <input id="sm" type="number" min="0" value="1" step="1">
-            <br>
-            <br>
-            <strong>Выберите действие:</strong><br>
-            <br>
-            <input class="codebutton" onclick="caesar_code(0,+sm.value)" type="button" value="Шифровать">
-            <input class="codebutton" onclick="caesar_code(1,+sm.value)" type="button" value="Дешифровать">
-            <br>
-            <br>
-            <br>
-            <strong>Результат:</strong><br>
-            <br>
-            <input id="b_text2" type="text" size="80">
+            <form action="#" method="get" onsubmit="return false;">
+                <table class="noborder">
+                    <tbody>
+                        <tr>
+                            <td><label for="text">Text:</label></td>
+                            <td><textarea id="text" cols="50" rows="10" style="width:40em; height:15em"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label for="shift">Shift:</label></td>
+                            <td><input type="text" id="shift" value="2" style="width:4em;" /></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input class="codebutton" type="button" value="Encrypt" onclick="doCrypt(false);" />
+                                <input class="codebutton1" type="button" value="Decrypt" onclick="doCrypt(true);" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
         </div>
         <script src="coder.js"></script>
     </body>

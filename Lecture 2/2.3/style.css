@@ -1,3 +1,9 @@
 body {
     background: url(images/thisimage.jpg);
 }
+
+.rectangle {
+    width: 200px;
+    height: 70px;
+    background-color: white;
+}
