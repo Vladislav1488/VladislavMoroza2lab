@@ -9,29 +9,38 @@
 </head>
 
 <body>
-    <form action="#" method="get" onsubmit="return false">
+
+    <form action="#" method="get" onsubmit="return false" >
         <div align="center">
-            <table class="noborder">
-                <tbody>
-                    <tr>
-                        <td><label for="text">Text:</label></td>
-                        <td><textarea class="textarea" id="text" cols="50" rows="10" "></textarea></td>
-                </tr>
+        <table class="noborder">
+            <tbody>
                 <tr>
-                    <td><label for=" key">Key:</label></td>
-                    <td><input class="key" type="text" value="abc" id="key"" /></td>
+                    <td><label for="text">Text:</label></td>
+                    <td><textarea id="text" cols="50" rows="10" style="width:20em; height:7em"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td><label for="text">Result:</label></td>
+                    <td><textarea id="result" cols="50" rows="10" style="width:20em; height:7em"></textarea></td>
+                </tr>
+
+
+                <tr>
+                    <td><label for="key">Key:</label></td>
+                    <td><input type="text" value="abc" id="key" style="width:10em;" /></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>
-                        <input class="codebutton1" type="button" value="Encrypt" onclick="doCrypt(false)" />
-                        <input class="codebutton" type="button" value="Decrypt" onclick="doCrypt(true)" />
+                        <input type="button" class="codebutton" value="Encrypt" onclick="doCrypt(false)" />
+                        <input type="button" class="codebutton1" value="Decrypt" onclick="doCrypt(true)" />
                     </td>
                 </tr>
             </tbody>
         </table>
-    </div>
+        </div>
     </form>
+
 </body>
 
 </html>
