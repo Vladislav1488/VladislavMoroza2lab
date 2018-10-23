@@ -3,22 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Шифр Цезаря</title>
+    <title>Цезарь</title>
+    <script type="text/javascript" src="coder.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-<div class="container1">
 
-    <body>
-        <br>
+<body>
+
+    <form action="#" method="get" onsubmit="return false" >
         <div align="center">
-            <form action="#" method="get" onsubmit="return false;">
-                <table class="noborder">
-                    <tbody>
-                        <tr>
-                            <td><label for="text">Text:</label></td>
-                            <td><textarea id="text" cols="50" rows="10" style="width:40em; height:15em"></textarea></td>
-                        </tr>
-                        <tr>
+        <table class="noborder">
+            <tbody>
+                <tr>
+                    <td><label for="text">Text:</label></td>
+                    <td><textarea id="text" cols="50" rows="10" style="width:20em; height:7em"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td><label for="text">Result:</label></td>
+                    <td><textarea id="result" cols="50" rows="10" style="width:20em; height:7em"></textarea></td>
+                </tr>
                             <td><label for="shift">Shift:</label></td>
                             <td><input type="text" id="shift" value="2" style="width:4em;" /></td>
                         </tr>
@@ -38,3 +42,4 @@
 </div>
 
 </html>
+
